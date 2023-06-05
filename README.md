@@ -1,2 +1,2 @@
-# decentra-share
+# Decentra Share
 A decentralize file sharing system.
