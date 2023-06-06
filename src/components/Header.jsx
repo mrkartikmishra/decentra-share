@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { connectWallet } from "../utils";
 
 const Header = () => {
   return (
@@ -7,7 +8,10 @@ const Header = () => {
       <Link to="/">
         <h2 className="font-bold italic text-xl">DecentraShare</h2>
       </Link>
-      <button className="bg-gradient-to-r from-orangelight to-orangedark px-2 py-1 rounded-md hover:bg-orangedark">
+      <button
+        onClick={() => connectWallet()}
+        className="bg-gradient-to-r text-secondary from-orangelight to-orangedark px-2 py-1 rounded-md hover:bg-orangedark"
+      >
         Connect Wallet
       </button>
     </nav>
